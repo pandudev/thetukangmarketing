@@ -1,0 +1,28 @@
+.services {
+  &__banner {
+    height: 80vh;
+
+    & > img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__title {
+    position: relative;
+    & > h2 {
+      position: absolute;
+      padding: 1rem 2rem;
+      background-color: $blue;
+      color: $white;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  &__content {
+    padding: 5rem 0 2rem 0;
+    text-align: justify;
+  }
+}

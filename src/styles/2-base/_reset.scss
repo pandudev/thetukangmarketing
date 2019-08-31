@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  @include font($font-base, normal, $black);
+}
+
+a {
+  text-decoration: unset;
+  color: $blue;
+}
+
+img {
+  width: 100%;
+}

@@ -1,0 +1,16 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    outline: unset;
+    border: none;
+    @include font($font-base, $font-normal, $black);
+  }
+}

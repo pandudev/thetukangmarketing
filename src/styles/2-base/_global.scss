@@ -1,0 +1,32 @@
+.container {
+  width: 80%;
+  @include center();
+}
+
+a:hover {
+  color: $red;
+}
+
+// a {
+//   position: relative;
+//   overflow: hidden;
+//   background-color: transparent;
+//   z-index: 2;
+
+//   &::before {
+//     @include pseudo(block, absolute, "");
+//     width: 100%;
+//     height: 100%;
+//     left: -100%;
+//     background-color: $red;
+//     z-index: 1;
+//   }
+
+//   &:hover {
+//     &::before {
+//       left: 0;
+//     }
+
+//     color: $white;
+//   }
+// }

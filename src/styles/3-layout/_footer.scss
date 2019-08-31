@@ -1,0 +1,60 @@
+.footer {
+  padding: 2rem 0;
+  background-color: $darkBlue;
+
+  & p {
+    color: $white;
+    text-align: justify;
+    margin: 0;
+  }
+
+  & h5 {
+    color: $white;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    flex-basis: 15%;
+
+    & > img {
+      height: 150px;
+      width: auto;
+    }
+  }
+
+  &__about {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 60%;
+
+    &__office {
+      flex: 0 0 55%;
+
+      & > div {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &__contact {
+      flex: 0 0 40%;
+
+      & > div {
+        margin-bottom: 0.5rem;
+
+        & > a {
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+
+  &__nav {
+    flex-basis: 20%;
+  }
+}

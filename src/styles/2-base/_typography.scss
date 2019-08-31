@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700&display=swap");
+
+@font-face {
+  font-family: "Glacial Bold";
+  src: url("/build/fonts/glacialindifference-bold-webfont.woff2")
+      format("woff2"),
+    url("/build/fonts/glacialindifference-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Glacial";
+  src: url("/build/fonts/glacialindifference-regular-webfont.woff2")
+      format("woff2"),
+    url("/build/fonts/glacialindifference-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include font($font-title);
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+
+  & > span {
+    display: block;
+    @include font($font-title-bold);
+  }
+}
+
+h1 {
+  font-size: $font-h1;
+}
+
+h2 {
+  font-size: $font-h2;
+}
+
+h3 {
+  font-size: $font-h3;
+}
+
+h4 {
+  font-size: $font-h4;
+}
+
+h5 {
+  font-size: $font-h5;
+}
+
+h6 {
+  font-size: $font-h6;
+}
+
+p {
+  font-size: $font-normal;
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.6;
+}

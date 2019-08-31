@@ -1,0 +1,27 @@
+.header {
+  background-color: $darkBlue;
+  // border-bottom: 2px solid $blue;
+
+  &__wrapper {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    & > img {
+      height: 50px;
+      width: auto;
+    }
+  }
+
+  &__nav {
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+  }
+}

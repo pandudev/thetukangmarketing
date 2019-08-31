@@ -1,0 +1,22 @@
+.cta {
+  background-color: $lightGrey;
+  padding: 2rem 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      color: $darkBlue;
+    }
+
+    .btn--primary {
+      font-size: $font-h4;
+      padding: 1rem 4rem;
+    }
+  }
+}
