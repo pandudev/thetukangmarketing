@@ -9,9 +9,9 @@ $black: #505050;
 
 // Breakpoints
 $breakpoint-desktop: 1200px;
-$breakpoint-laptop: 950px;
+$breakpoint-laptop: 992px;
 $breakpoint-tablet: 768px;
-$breakpoint-mobile: 400px;
+$breakpoint-landscape-phone: 576px;
 
 // Font
 $font-title: "Glacial";
@@ -19,10 +19,10 @@ $font-title-bold: "Glacial Bold";
 $font-base: "Fira Sans", sans-serif;
 
 // Font Size
-$font-h1: 36px;
-$font-h2: 32px;
-$font-h3: 28px;
-$font-h4: 24px;
-$font-h5: 18px;
-$font-h6: 16px;
-$font-normal: 16px;
+$font-h1: 2.25rem;
+$font-h2: 2rem;
+$font-h3: 1.75rem;
+$font-h4: 1.5rem;
+$font-h5: 1.125rem;
+$font-h6: 1rem;
+$font-normal: 1rem;

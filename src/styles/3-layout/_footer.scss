@@ -16,14 +16,30 @@
 
   &__wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-landscape-phone) {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    @media (min-width: $breakpoint-laptop) {
+      flex-wrap: nowrap;
+      align-items: flex-start;
+    }
   }
 
   &__logo {
-    flex-basis: 15%;
+    display: none;
+
+    @media (min-width: $breakpoint-laptop) {
+      display: flex;
+      flex-basis: 10%;
+    }
 
     & > img {
-      height: 150px;
+      height: 50px;
       width: auto;
     }
   }
@@ -31,21 +47,69 @@
   &__about {
     display: flex;
     justify-content: space-between;
-    flex-basis: 60%;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-landscape-phone) {
+      flex-basis: 60%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: $breakpoint-laptop) {
+      flex-wrap: nowrap;
+      flex: 1;
+      justify-content: space-between;
+    }
 
     &__office {
-      flex: 0 0 55%;
+      margin-bottom: 1rem;
+
+      @media (min-width: $breakpoint-landscape-phone) {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (min-width: $breakpoint-laptop) {
+        flex: 0 0 55%;
+        justify-content: flex-start;
+      }
 
       & > div {
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
+
+        @media (min-width: $breakpoint-landscape-phone) {
+          flex: 1 1 auto;
+        }
       }
     }
 
     &__contact {
-      flex: 0 0 40%;
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: $breakpoint-landscape-phone) {
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 0 0 auto;
+      }
+
+      @media (min-width: $breakpoint-laptop) {
+        justify-content: flex-start;
+        flex-direction: column;
+        flex: 0 0 40%;
+      }
 
       & > div {
-        margin-bottom: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        @media (min-width: $breakpoint-landscape-phone) {
+          &:first-of-type {
+            margin-right: 2rem;
+          }
+        }
 
         & > a {
           line-height: 1.6;
@@ -55,6 +119,22 @@
   }
 
   &__nav {
-    flex-basis: 20%;
+    margin-bottom: 1rem;
+
+    @media (min-width: $breakpoint-laptop) {
+      flex-basis: 20%;
+    }
+  }
+
+  &__copyright {
+    justify-self: stretch;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid $white;
+    padding-top: 1rem;
+
+    @media (min-width: $breakpoint-landscape-phone) {
+      flex: 0 0 100%;
+    }
   }
 }

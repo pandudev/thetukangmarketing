@@ -76,7 +76,7 @@
         line-height: 1.6;
         position: relative;
         overflow: hidden;
-        padding-left: 0.5rem;
+        // padding-left: 0.5rem;
 
         &::before {
           @include pseudo(block, absolute, "");

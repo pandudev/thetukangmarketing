@@ -1,6 +1,5 @@
 .header {
   background-color: $darkBlue;
-  // border-bottom: 2px solid $blue;
 
   &__wrapper {
     height: 60px;
@@ -14,14 +13,59 @@
     align-items: center;
 
     & > img {
-      height: 50px;
+      // height: 50px;
+      height: 40px;
       width: auto;
     }
   }
 
   &__nav {
-    flex-basis: 50%;
-    height: 100%;
+    display: none;
+
+    @media (min-width: $breakpoint-landscape-phone) {
+      // flex-basis: 50%;
+      flex-basis: 60%;
+      height: 100%;
+      display: flex;
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+      flex-basis: 50%;
+    }
+  }
+
+  &__burger {
+    height: 50px;
+    width: 50px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    @media (min-width: $breakpoint-landscape-phone) {
+      display: none;
+    }
+    &__bar {
+      height: 5px;
+      width: 30px;
+      background-color: $white;
+      position: relative;
+
+      &::before,
+      &::after {
+        @include pseudo();
+        height: 5px;
+        width: 30px;
+        background-color: $white;
+      }
+
+      &::before {
+        top: -10px;
+      }
+
+      &::after {
+        bottom: -10px;
+      }
+    }
   }
 }

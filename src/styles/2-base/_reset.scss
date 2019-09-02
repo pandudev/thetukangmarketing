@@ -4,7 +4,16 @@
 
 html,
 body {
+  font-size: 12px;
   @include font($font-base, normal, $black);
+
+  @media (min-width: $breakpoint-landscape-phone) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+  }
 }
 
 a {

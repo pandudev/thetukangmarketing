@@ -17,6 +17,11 @@
     .btn--primary {
       font-size: $font-h4;
       padding: 1rem 4rem;
+      align-self: stretch;
+
+      @media (min-width: $breakpoint-landscape-phone) {
+        align-self: unset;
+      }
     }
   }
 }
