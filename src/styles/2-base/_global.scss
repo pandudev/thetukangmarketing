@@ -11,6 +11,10 @@
   }
 }
 
+body {
+  position: relative;
+}
+
 a:hover {
   color: $red;
 }

@@ -1,6 +1,7 @@
 .services {
   &__banner {
-    height: 80vh;
+    // height: 80vh;
+    height: 50vh;
 
     & > img {
       height: 100%;
@@ -16,8 +17,16 @@
       padding: 1rem 2rem;
       background-color: $blue;
       color: $white;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
+      left: 10%;
+      right: 10%;
+      transform: translateY(-70%);
+      text-align: center;
+
+      @media (min-width: $breakpoint-landscape-phone) {
+        transform: translateY(-50%);
+      }
+      // left: 50%;
+      // transform: translateX(-50%) translateY(-50%);
     }
   }
 

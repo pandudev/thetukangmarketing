@@ -1,11 +1,17 @@
 .header {
   background-color: $darkBlue;
+  position: relative;
+  z-index: 2;
 
   &__wrapper {
     height: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+
+    @media (min-width: $breakpoint-landscape-phone) {
+      justify-content: space-between;
+    }
   }
 
   &__logo {
@@ -13,7 +19,6 @@
     align-items: center;
 
     & > img {
-      // height: 50px;
       height: 40px;
       width: auto;
     }
@@ -31,41 +36,6 @@
 
     @media (min-width: $breakpoint-tablet) {
       flex-basis: 50%;
-    }
-  }
-
-  &__burger {
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-
-    @media (min-width: $breakpoint-landscape-phone) {
-      display: none;
-    }
-    &__bar {
-      height: 5px;
-      width: 30px;
-      background-color: $white;
-      position: relative;
-
-      &::before,
-      &::after {
-        @include pseudo();
-        height: 5px;
-        width: 30px;
-        background-color: $white;
-      }
-
-      &::before {
-        top: -10px;
-      }
-
-      &::after {
-        bottom: -10px;
-      }
     }
   }
 }

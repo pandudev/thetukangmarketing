@@ -1,0 +1,26 @@
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  z-index: 200;
+
+  @media (min-width: $breakpoint-landscape-phone) {
+    display: none;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > .nav {
+    position: relative;
+    bottom: -10000px;
+    transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  &.active > .nav {
+    bottom: 0;
+  }
+}

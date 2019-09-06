@@ -9,14 +9,33 @@
       justify-content: center;
       align-items: center;
 
+      flex-direction: column;
+      @media (min-width: $breakpoint-laptop) {
+        flex-direction: row;
+      }
+
       & > img {
         width: 250px;
         height: auto;
+
+        order: 2;
+
+        @media (min-width: $breakpoint-laptop) {
+          order: 1;
+        }
       }
 
       & > h1 {
         color: $darkBlue;
         text-transform: uppercase;
+
+        order: 1;
+        text-align: center;
+
+        @media (min-width: $breakpoint-laptop) {
+          order: 2;
+          text-align: left;
+        }
       }
     }
   }
@@ -55,6 +74,12 @@
       display: flex;
       justify-content: space-around;
 
+      flex-direction: column;
+
+      @media (min-width: $breakpoint-tablet) {
+        flex-direction: row;
+      }
+
       & > div {
         display: flex;
         flex-direction: column;
@@ -65,23 +90,41 @@
           margin-bottom: 1rem;
           font-weight: bold;
         }
+
+        &:last-of-type {
+          & > .about__contact__item > a > img {
+            margin: 0 0.5rem;
+          }
+        }
       }
     }
 
     &__item {
       display: flex;
-      align-self: flex-start;
+      justify-content: center;
+
+      @media (min-width: $breakpoint-tablet) {
+        align-self: flex-start;
+        justify-content: stretch;
+      }
 
       & img {
-        width: 32px;
-        height: 32px;
         margin-right: 1rem;
+        width: 24px;
+        height: 24px;
+
+        @media (min-width: $breakpoint-tablet) {
+          width: 32px;
+          height: 32px;
+        }
       }
 
       & > div {
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
+
+        // align-items: center;
 
         & > a {
           line-height: 1.6;
