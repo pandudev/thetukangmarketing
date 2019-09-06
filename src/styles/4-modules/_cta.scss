@@ -18,6 +18,7 @@
       font-size: $font-h4;
       padding: 1rem 4rem;
       align-self: stretch;
+      text-align: center;
 
       @media (min-width: $breakpoint-landscape-phone) {
         align-self: unset;
