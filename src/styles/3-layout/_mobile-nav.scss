@@ -8,6 +8,7 @@
   visibility: hidden;
   height: 85vh;
   transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 0;
 
   @media (min-width: $breakpoint-landscape-phone) {
     display: none;
@@ -22,5 +23,7 @@
     top: 0;
     visibility: visible;
     z-index: 200;
+    transition: top 0.8s;
+    transition-delay: 0.1s;
   }
 }
