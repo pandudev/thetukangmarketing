@@ -43,7 +43,7 @@
         }
 
         & > a {
-          @include font($font-title, false, $blue);
+          @include font($font-base, false, $blue);
           font-size: $font-h5;
           transition: all 0.2s ease-in-out;
           height: 100%;
