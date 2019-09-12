@@ -35,4 +35,10 @@ $(document).ready(function() {
       .siblings()
       .removeClass("active");
   });
+
+  $(".goTo").click(function(e) {
+    e.preventDefault();
+    var position = $($(this).attr("href")).offset().top;
+    $("html, body").animate({ scrollTop: position });
+  });
 });
