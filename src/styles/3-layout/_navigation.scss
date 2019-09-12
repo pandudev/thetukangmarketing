@@ -115,6 +115,25 @@
           }
         }
       }
+
+      &--training {
+        & > ul {
+          background-color: $blue;
+
+          & > li::before {
+            background-color: $darkRed;
+          }
+        }
+      }
+    }
+
+    &--training > ul > li {
+      &::before {
+        background-color: $blue;
+      }
+      & > a {
+        color: $red;
+      }
     }
   }
 

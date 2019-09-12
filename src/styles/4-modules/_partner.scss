@@ -50,12 +50,12 @@
 
       & > img {
         width: 100%;
-        filter: grayscale(100%) opacity(0.5);
+        // filter: grayscale(100%) opacity(0.5);
       }
 
-      &:hover > img {
-        filter: opacity(1);
-      }
+      // &:hover > img {
+      //   filter: opacity(1);
+      // }
     }
   }
 }

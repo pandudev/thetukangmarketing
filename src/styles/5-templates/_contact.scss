@@ -61,16 +61,28 @@
       flex-basis: 50%;
       display: flex;
       align-self: center;
+      margin-bottom: 1rem;
+      align-items: center;
 
       @media (min-width: $breakpoint-landscape-phone) {
         align-self: flex-start;
       }
 
       &:last-of-type {
-        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
 
-        & img {
-          margin: 0 0.5rem;
+        & > a {
+          display: flex;
+        }
+
+        @media (min-width: $breakpoint-landscape-phone) {
+          flex-direction: row;
+          // justify-content: space-between;
+
+          & > a:first-child {
+            margin-right: 1rem;
+          }
         }
       }
 
@@ -89,7 +101,7 @@
       & > div {
         display: flex;
         flex-direction: column;
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
 
         & > a {
           line-height: 1.6;
@@ -107,6 +119,7 @@
     background-color: $blue;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 2rem;
 

@@ -1,0 +1,39 @@
+.info {
+  padding: 2rem 0;
+
+  h1 {
+    color: $darkBlue;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+
+    & > img {
+      width: 24px;
+      height: 24px;
+      margin-right: 1rem;
+
+      @media (min-width: $breakpoint-landscape-phone) {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    & > p {
+      @media (min-width: $breakpoint-landscape-phone) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

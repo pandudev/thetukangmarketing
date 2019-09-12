@@ -4,10 +4,6 @@ $(document).ready(function() {
     $("#mobile-nav").toggleClass("active");
   });
 
-  // $("#hamburger").click(function() {
-  //   $("#mobile-nav").css("z-index", "50px");
-  // });
-
   $(".nav--mobile__dropdown").click(function() {
     $(".nav--mobile__dropdown ul").slideDown({
       start: function() {
@@ -32,4 +28,11 @@ $(document).ready(function() {
         }
       });
     });
+
+  $(".home--training__box__item").click(function() {
+    $(this).addClass("active");
+    $(this)
+      .siblings()
+      .removeClass("active");
+  });
 });
