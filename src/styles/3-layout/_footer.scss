@@ -259,6 +259,14 @@
           display: flex;
           justify-content: center;
 
+          & > a {
+            text-align: center;
+
+            @media (min-width: $breakpoint-laptop) {
+              text-align: left;
+            }
+          }
+
           &.training {
             flex-basis: 25%;
             display: flex;

@@ -20,6 +20,10 @@
 
     order: 2;
 
+    & > h1 {
+      color: $darkBlue;
+    }
+
     @media (min-width: $breakpoint-tablet) {
       align-items: flex-start;
       order: 1;
@@ -135,5 +139,14 @@
       color: $white;
       text-align: center;
     }
+
+    // & .btn {
+    //   @media (min-width: $breakpoint-landscape-phone) {
+    //     align-self: flex-end;
+    //     flex-grow: 0;
+    //     padding: 1rem 3rem;
+    //     letter-spacing: 0.6rem;
+    //   }
+    // }
   }
 }
