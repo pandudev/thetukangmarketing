@@ -264,12 +264,12 @@
             display: flex;
             justify-content: center;
 
-            @media (min-width: $breakpoint-tablet) {
+            @media (min-width: $breakpoint-laptop) {
               justify-content: flex-start;
             }
           }
 
-          @media (min-width: $breakpoint-tablet) {
+          @media (min-width: $breakpoint-laptop) {
             justify-content: flex-start;
           }
         }
