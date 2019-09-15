@@ -1,0 +1,121 @@
+.welcome {
+  min-height: 100vh;
+  background-image: url("/build/images/services-banner.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    @include pseudo();
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $darkBlue;
+    opacity: 0.75;
+    z-index: 2;
+  }
+
+  &::before {
+    @include pseudo();
+    width: 90%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid $white;
+  }
+
+  &__wrapper {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    align-items: center;
+    min-height: 60vh;
+    justify-content: space-around;
+
+    & > p {
+      color: $white;
+      margin-bottom: 2rem;
+      text-align: justify;
+
+      @media (min-width: $breakpoint-tablet) {
+        padding: 0 2rem;
+      }
+
+      @media (min-width: $breakpoint-laptop) {
+        padding: 0 6rem;
+      }
+    }
+
+    & > img {
+      width: 80vw !important;
+      height: auto;
+      margin-bottom: 1rem;
+
+      @media (min-width: $breakpoint-tablet) {
+        width: 500px !important;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+      justify-content: center;
+      align-self: stretch;
+    }
+
+    @media (min-width: $breakpoint-laptop) {
+      align-self: center;
+      width: 80%;
+    }
+
+    & > .btn {
+      padding: 1rem 2rem;
+      text-align: center;
+
+      @media (min-width: $breakpoint-laptop) {
+        // padding: 2rem;
+        flex-basis: 100%;
+      }
+
+      &::before {
+        background-color: $red;
+      }
+
+      &:first-child {
+        margin-bottom: 1rem;
+
+        @media (min-width: $breakpoint-tablet) {
+          margin-right: 10px;
+          margin-bottom: 0;
+        }
+      }
+
+      &:last-child {
+        @media (min-width: $breakpoint-tablet) {
+          margin-left: 10px;
+        }
+      }
+
+      & > span {
+        font-size: 1.125rem;
+        line-height: 1.5;
+
+        @media (min-width: $breakpoint-laptop) {
+          // font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

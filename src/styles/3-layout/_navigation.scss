@@ -198,9 +198,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
+
+        &.active {
+          background-color: $darkRed;
+        }
 
         & > a {
           flex-basis: 50%;

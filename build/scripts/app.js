@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  let heroheight = $(window).height() - ($(".cta--training").height() + 48);
+  $(".hero--training").css("height", heroheight - 160);
+
   $("#hamburger").click(function() {
     $(".hamburger__bar").toggleClass("active");
     $("#mobile-nav").toggleClass("active");

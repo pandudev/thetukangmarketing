@@ -11,8 +11,14 @@
   }
 
   &--training {
-    height: 350px;
+    padding-bottom: 100px;
     background-color: $white;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: $breakpoint-landscape-phone) {
+      padding-bottom: 2rem;
+    }
 
     & h1 {
       text-transform: capitalize !important;
@@ -20,10 +26,6 @@
       & > span {
         font-weight: normal;
       }
-    }
-
-    @media (min-width: $breakpoint-landscape-phone) {
-      height: 250px;
     }
   }
 

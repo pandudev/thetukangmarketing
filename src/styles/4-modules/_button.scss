@@ -8,32 +8,43 @@
   padding: 0.75rem 1rem;
   letter-spacing: 0.2rem;
   cursor: pointer;
+  overflow: hidden !important;
   position: relative;
-  overflow: hidden;
+
+  &::before {
+    @include pseudo(block, absolute, "");
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: bottom 0.2s ease-in-out;
+    z-index: 0;
+  }
+
+  &:hover {
+    &::before {
+      bottom: 0;
+    }
+
+    & > span {
+      position: relative;
+      z-index: 10;
+    }
+  }
 
   &--primary {
     background-color: $red;
 
     &::before {
-      @include pseudo(block, absolute, "");
-      bottom: -100%;
-      left: 0;
-      width: 100%;
-      height: 100%;
       background-color: $darkRed;
-      transition: bottom 0.2s ease-in-out;
-      z-index: 0;
     }
+  }
 
-    &:hover {
-      &::before {
-        bottom: 0;
-      }
+  &--accent {
+    background-color: $blue;
 
-      & > span {
-        position: relative;
-        z-index: 10;
-      }
+    &::before {
+      background-color: $darkBlue;
     }
   }
 }

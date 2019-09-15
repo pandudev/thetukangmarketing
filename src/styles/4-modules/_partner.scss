@@ -33,23 +33,33 @@
 
   &__content {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     position: relative;
     z-index: 2;
-    flex-wrap: wrap;
+
+    @media (min-width: $breakpoint-landscape-phone) {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
 
     &__item {
-      flex-basis: 40%;
       align-items: center;
       justify-content: center;
       display: flex;
+      margin-bottom: 3rem;
 
       @media (min-width: $breakpoint-landscape-phone) {
         flex-basis: 20%;
+        margin-bottom: 0;
       }
 
       & > img {
-        width: 100%;
+        width: 60%;
+
+        @media (min-width: $breakpoint-landscape-phone) {
+          width: 100%;
+        }
         // filter: grayscale(100%) opacity(0.5);
       }
 
