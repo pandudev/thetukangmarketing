@@ -9,6 +9,15 @@
   align-items: center;
   z-index: 0;
 
+  &--clients {
+    background-image: none;
+    // background-color: $lightGrey !important;
+
+    &::after {
+      display: none !important;
+    }
+  }
+
   &::after {
     @include pseudo(block, absolute, "");
     top: 0;
