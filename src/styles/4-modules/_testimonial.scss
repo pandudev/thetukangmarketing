@@ -133,6 +133,10 @@
     & iframe {
       width: 100%;
       height: 180px;
+
+      @media (min-width: $breakpoint-tablet) {
+        height: 280px;
+      }
     }
   }
 }

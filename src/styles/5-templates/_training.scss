@@ -304,6 +304,7 @@
       display: flex;
       flex-direction: column;
       align-self: stretch;
+      margin-bottom: 4rem !important;
 
       @media (min-width: $breakpoint-tablet) {
         flex-direction: row;
@@ -354,6 +355,7 @@
       display: flex;
       flex-direction: column;
       align-self: stretch;
+      margin-bottom: 4rem !important;
 
       @media (min-width: $breakpoint-desktop) {
         flex-direction: row;
