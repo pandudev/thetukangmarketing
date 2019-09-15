@@ -61,10 +61,11 @@
       </div>
     </header>
 
+    <!-- mobile-nav -->
     <div id="mobile-nav" class="mobile-nav">
       <nav class="nav nav--mobile">
         <ul>
-          <li class="active"><a href="./dms-home.html">Home</a></li>
+          <li><a href="./dms-home.html">Home</a></li>
           <li class="nav--mobile__dropdown">
             <a href="#">Services</a>
             <ul>
@@ -96,7 +97,7 @@
               >Blog</a
             >
           </li>
-          <li><a href="./dms-contact.html">Contact</a></li>
+          <li class="active"><a href="./dms-contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -120,14 +121,18 @@
           </div>
           <div>
             <div class="contact__about__item">
-              <img src="images/icons/wall-clock.png" alt="Open Hours" />
+              <svg class="icon">
+                <use xlink:href="images/icons/sprite.svg#clock"></use>
+              </svg>
               <div>
                 <p>Monday - Friday</p>
                 <p>9 AM - 6 PM (GMT+8)</p>
               </div>
             </div>
             <div class="contact__about__item">
-              <img src="images/icons/mail.png" alt="Email" />
+              <svg class="icon">
+                <use xlink:href="images/icons/sprite.svg#email"></use>
+              </svg>
               <div>
                 <a href="mailto:contact@tukangmarketing.com">
                   contact@tukangmarketing.com
@@ -138,18 +143,24 @@
               </div>
             </div>
             <div class="contact__about__item">
-              <img src="images/icons/telephone.png" alt="Phone" />
+              <svg class="icon">
+                <use xlink:href="images/icons/sprite.svg#phone"></use>
+              </svg>
               <div>
                 <p>+62 877 7828 3359</p>
               </div>
             </div>
             <div class="contact__about__item">
               <a href="#">
-                <img src="images/icons/instagram.png" alt="Instagram" />
+                <svg class="icon">
+                  <use xlink:href="images/icons/sprite.svg#025-instagram"></use>
+                </svg>
                 <h5>Instagram</h5>
               </a>
               <a href="#">
-                <img src="images/icons/facebook.png" alt="Facebook" />
+                <svg class="icon">
+                  <use xlink:href="images/icons/sprite.svg#021-facebook"></use>
+                </svg>
                 <h5>Facebook</h5>
               </a>
             </div>
@@ -197,11 +208,15 @@
     <footer id="footer" class="footer">
       <div class="footer__wrapper container">
         <div class="footer__logo">
-          <img src="images/logo/footer-logo.png" alt="The Tukang Marketing Logo" />
+          <img
+            src="images/logo/footer-logo.png"
+            alt="The Tukang Marketing Logo"
+          />
         </div>
         <div class="footer__about">
           <div class="footer__about__office">
             <div>
+              <h5>Address</h5>
               <p>
                 Jl. Bukit Duri Permai No. 8 RT. 14 / RW. 4 Bidara Cina, Kec.
                 Jatinegara, Jakarta Timur DKI Jakarta, 13320
@@ -230,11 +245,19 @@
               <h5>Social Links</h5>
               <div class="footer__about__contact__social">
                 <a href="#">
-                  <img src="images/icons/instagram.png" alt="Instagram" />
+                  <svg class="icon">
+                    <use
+                      xlink:href="images/icons/sprite.svg#025-instagram"
+                    ></use>
+                  </svg>
                   <p>Instagram</p>
                 </a>
                 <a href="#">
-                  <img src="images/icons/facebook.png" alt="Facebook" />
+                  <svg class="icon">
+                    <use
+                      xlink:href="images/icons/sprite.svg#021-facebook"
+                    ></use>
+                  </svg>
                   <p>Facebook</p>
                 </a>
               </div>
