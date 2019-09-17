@@ -139,4 +139,32 @@
       }
     }
   }
+
+  &__gallery {
+     margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+
+
+
+    &__photo {
+
+      flex-basis: 100%;
+      margin-bottom: 1rem;
+
+      @media (min-width: $breakpoint-tablet) {
+        flex-basis: 48%;
+      }
+
+      @media (min-width: $breakpoint-laptop) {
+        flex-basis: 24%;
+      }
+
+      & > img {
+        object-fit: cover;
+      }
+    }
+  }
 }
