@@ -142,6 +142,27 @@
       display: flex;
       flex-direction: column;
 
+      &--row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        & > .home__section__item {
+          flex-basis: 45%;
+          flex-direction: column;
+          text-align: center;
+          flex-grow: 0;
+        }
+
+
+        @media (min-width: $breakpoint-tablet) {
+            flex-direction: row !important;
+            justify-content: space-around !important;
+            flex-wrap: nowrap !important;
+          }
+
+      }
+
       @media (min-width: $breakpoint-landscape-phone) {
         flex-direction: row;
         justify-content: space-between;
