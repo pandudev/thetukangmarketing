@@ -42,15 +42,15 @@
 
   &__content {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     position: relative;
     z-index: 2;
 
-    @media (min-width: $breakpoint-landscape-phone) {
+    // @media (min-width: $breakpoint-landscape-phone) {
       flex-direction: row;
       justify-content: space-around;
       flex-wrap: wrap;
-    }
+    // }
 
     &__item {
       align-items: center;
@@ -58,13 +58,19 @@
       display: flex;
       margin-bottom: 3rem;
 
+      flex-wrap: wrap;
+      padding: 0 2rem;
+      flex-basis: 50%;
+
+
       @media (min-width: $breakpoint-landscape-phone) {
-        flex-basis: 20%;
+        flex-basis: 25%;
         margin-bottom: 0;
+        // padding: 0 1rem;
       }
 
       & > img {
-        width: 60%;
+        width: 100%;
 
         @media (min-width: $breakpoint-landscape-phone) {
           width: 100%;

@@ -151,6 +151,10 @@
         overflow: hidden;
         // padding-left: 0.5rem;
 
+        & > a {
+          color: $white;
+        }
+
         &::before {
           @include pseudo(block, absolute, "");
           width: 100%;
@@ -165,6 +169,7 @@
           &::before {
             left: 0;
           }
+
           & > a {
             color: $white;
           }
