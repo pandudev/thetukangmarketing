@@ -35,6 +35,10 @@
     @media (min-width: $breakpoint-tablet) {
       justify-content: space-around;
       flex-direction: row;
+
+      &--why {
+        flex-wrap: wrap;
+      }
     }
   }
 
@@ -55,7 +59,7 @@
       & > h1 {
         // color: $darkBlue;
         // text-shadow: 2px 2px 2px $black;
-        background-color: rgba($color: $blue, $alpha: .5);
+        background-color: rgba($color: $blue, $alpha: 0.5);
         text-align: center !important;
         margin-bottom: 0 !important;
         padding: 1rem;
@@ -142,27 +146,6 @@
       display: flex;
       flex-direction: column;
 
-      &--row {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-        & > .home__section__item {
-          flex-basis: 45%;
-          flex-direction: column;
-          text-align: center;
-          flex-grow: 0;
-        }
-
-
-        @media (min-width: $breakpoint-tablet) {
-            flex-direction: row !important;
-            justify-content: space-around !important;
-            flex-wrap: nowrap !important;
-          }
-
-      }
-
       @media (min-width: $breakpoint-landscape-phone) {
         flex-direction: row;
         justify-content: space-between;
@@ -170,16 +153,29 @@
         flex-wrap: wrap;
       }
 
-      @media (min-width: $breakpoint-tablet) {
-        flex-direction: column;
-      }
+      // @media (min-width: $breakpoint-tablet) {
+      //   flex-direction: column;
+      //   align-items: stretch;
+      // }
 
-      @media (min-width: $breakpoint-laptop) {
-        flex-direction: row;
-      }
+      // @media (min-width: $breakpoint-laptop) {
+      //   flex-direction: row;
+      // }
 
       &--col {
         flex-direction: column;
+      }
+
+      &--why {
+        @media (min-width: $breakpoint-landscape-phone) {
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-self: stretch;
+        }
+
+        @media (min-width: $breakpoint-tablet) {
+          flex-wrap: nowrap;
+        }
       }
     }
 
@@ -209,10 +205,21 @@
         flex-basis: 45%;
       }
 
-      @media (min-width: $breakpoint-tablet) {
-        flex-direction: row;
-        justify-content: space-between;
+      &--why {
+        @media (min-width: $breakpoint-landscape-phone) {
+          flex-basis: 45%;
+          align-items: center;
+        }
+
+        & h5 {
+          text-align: center;
+        }
       }
+
+      // @media (min-width: $breakpoint-tablet) {
+      //   flex-direction: row;
+      //   justify-content: space-between;
+      // }
 
       &:not(:last-of-type) {
         margin-bottom: 1rem;
@@ -229,17 +236,17 @@
         justify-content: center;
         margin-bottom: 1rem;
 
-        @media (min-width: $breakpoint-tablet) {
-          flex-basis: 12%;
-          align-items: flex-start;
-        }
+        // @media (min-width: $breakpoint-tablet) {
+        //   flex-basis: 12%;
+        //   align-items: flex-start;
+        // }
 
         & > img {
           width: 80px;
           height: auto;
 
           @media (min-width: $breakpoint-tablet) {
-            width: 100%;
+            width: 100px;
           }
         }
       }
@@ -248,23 +255,31 @@
         display: flex;
         flex-direction: column;
 
-        @media (min-width: $breakpoint-tablet) {
-          flex-basis: 85%;
-        }
+        // @media (min-width: $breakpoint-tablet) {
+        //   flex-basis: 85%;
+        // }
 
         & > h5 {
           @include font($font-base, bold, $darkBlue);
           align-self: center;
+          text-align: center;
 
-          @media (min-width: $breakpoint-tablet) {
-            align-self: flex-start;
-          }
+          // @media (min-width: $breakpoint-tablet) {
+          //   align-self: flex-start;
+          // }
         }
 
         & > p {
           text-align: justify;
           margin-bottom: 0;
         }
+      }
+    }
+
+    &--why {
+      &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
       }
     }
   }
