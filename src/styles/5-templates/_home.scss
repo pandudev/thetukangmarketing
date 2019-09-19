@@ -1,7 +1,7 @@
 .hero {
   padding: 2rem 0;
   background-color: $blue;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
   position: relative;
@@ -10,12 +10,12 @@
     background-image: url("../images/training3.jpg");
     background-size: cover;
     background-position: center;
-    min-height: calc(100vh - 60px - 350px);
+    min-height: calc(100vh - 80px - 350px);
     position: relative;
     z-index: 1;
 
     @media (min-width: $breakpoint-landscape-phone) {
-      min-height: calc(100vh - 60px - 250px);
+      min-height: calc(100vh - 80px - 250px);
     }
 
     // &::before {
