@@ -1,6 +1,6 @@
 .welcome {
   min-height: 100vh;
-  background-image: url("../images/services-banner.jpg");
+  background-image: url('../images/services-banner.jpg');
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -15,7 +15,7 @@
     bottom: 0;
     left: 0;
     background-color: $darkBlue;
-    opacity: 0.75;
+    opacity: 0.5;
     z-index: 2;
   }
 

@@ -1,12 +1,13 @@
 .services {
   &__banner {
-    // height: 80vh;
+    // height: calc(100vh - 80px);
     height: 50vh;
+    background-color: $darkRed;
 
     & > img {
       height: 100%;
       object-fit: cover;
-      object-position: center;
+      object-position: center center;
     }
   }
 
