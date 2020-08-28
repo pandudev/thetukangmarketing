@@ -23,6 +23,15 @@ a.btn:hover {
   color: $white;
 }
 
+.w100 {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.center {
+  margin: 0 auto;
+}
+
 // a {
 //   position: relative;
 //   overflow: hidden;

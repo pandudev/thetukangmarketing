@@ -33,5 +33,10 @@
   &__content {
     padding: 2rem 0 2rem 0;
     text-align: justify;
+
+    p > img {
+      width: 100% !important;
+      height: auto !important;
+    }
   }
 }
